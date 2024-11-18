@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Einfacher Taschenrechner</title>
+  </head>
+  <body>
+    <input type="number" name="zahl" id="zahl1" />
+    <select name="operator" id="operator">
+      <option value="">operator</option>
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input type="number" name="zahl2" id="zahl2" />
+    <br />
+    <br />
+    <button onclick="rechne()">Rechne</button>
+    <br />
+    <br />
+    <label for="result">Rechnung: </label>
+    <output id="result"></output>
+    <script src="script.js"></script>
+  </body>
+</html>
