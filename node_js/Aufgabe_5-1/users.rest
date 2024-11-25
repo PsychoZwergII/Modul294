@@ -1,0 +1,40 @@
+###
+GET http://localhost:3000/users/1
+
+###
+GET http://localhost:3000/users
+
+
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username": "New User",
+  "email": "newuser@example.com"
+}
+
+###
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "username": "Updated User",
+  "email": "updateduser@example.com"
+}
+
+
+
+###
+
+DELETE http://localhost:3000/users/1
+
+###
+PATCH  http://localhost:3000/users/2
+Content-Type: application/json
+
+{
+  "username": "leon"
+  
+}
