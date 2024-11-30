@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 // Replace this secret key with a strong, randomly generated key in a production environment.
-const secretKey = "your-secret-key";
+const secretKey = "123";
 app.use(express.json());
 
 // Mock user data (in a real app, this would come from a database).
@@ -14,6 +14,7 @@ const users = [
   { id: 2, username: "user2", password: "password2" },
 ];
 
+// @ts-ignore
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
 
@@ -35,6 +36,7 @@ app.post("/login", (req, res) => {
   res.json({ token });
 });
 
+// @ts-ignore
 app.get("/protected", (req, res) => {
   const token = req.headers.authorization?.split(" ")[1]; // Bearer <token>
   if (!token) {

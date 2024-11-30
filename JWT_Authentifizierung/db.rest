@@ -10,4 +10,4 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/protected
-Authorization: Bearer <your_jwt_token>
+Authorization: Bearer  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoidXNlcjEiLCJpYXQiOjE3MzI1NDY2MDcsImV4cCI6MTczMjU1MDIwN30.c-U9-o9kYrXyHYQLyp8WBQRMArl7H-d1nWs9jjF7ZZk"
