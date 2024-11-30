@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jetstream-Service</title>
+    <title>Anmeldung - Jetstream-Service</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -30,40 +30,11 @@
         <a href="anmeldung.html"><i class="fas fa-user-plus"></i> Anmelden</a>
       </div>
     </header>
-    </nav>
     <header>
-      <h1>Willkommen bei Jetstream-Service</h1>
+      <h1>Online Anmeldung für Serviceaufträge</h1>
     </header>
     <main>
-      <section id="landing-page">
-        <h2>SKI, SNOWBOARD UND LANGLAUF SERVICE </h2>
-          
-        <h3>Ski und Snowboard brauchen ab und zu einen Boxenstopp. <br>
-          In all unseren Stores findest du dafür professionell eingerichtete Werkstätten, <br>
-          in denen unsere Spezialisten Service- und Reparaturaufträge  <br>
-          schnell und zuverlässig erledigen.</h3>
-        <video controls>
-          <source
-            src="y2mate.com - Ski Service Les Ruinettes  Verbier_v720P.mp4"
-            type="video/mp4"
-          />
-          Ihr Browser unterstützt das Video-Tag nicht.
-        </video>
-        <p>
-          Wir bieten eine Vielzahl von Skiservice-Dienstleistungen an, um Ihre
-          Skier in Top-Zustand zu halten.
-        </p>
-        <ul>
-          <li>Kleiner Service</li>
-          <li>Grosser Service</li>
-          <li>Rennski-Service</li>
-          <li>Bindung montieren und einstellen</li>
-          <li>Fell zuschneiden</li>
-          <li>Heisswachsen</li>
-        </ul>
-      </section>
       <section id="service-form">
-        <h2>Online Anmeldung für Serviceaufträge</h2>
         <form
           action="submit_service.php"
           method="post"
@@ -87,14 +58,43 @@
 
           <label for="service">Dienstleistung:</label>
           <select id="service" name="service" required>
-            <option value="kleiner-service">Kleiner Service</option>
-            <option value="grosser-service">Grosser Service</option>
-            <option value="rennski-service">Rennski-Service</option>
-            <option value="bindung-montieren">
-              Bindung montieren und einstellen
+            <option value="kleiner-service">
+              Ski Kleiner Service - CHF 39.00
             </option>
-            <option value="fell-zuschneiden">Fell zuschneiden</option>
-            <option value="heisswachsen">Heisswachsen</option>
+            <option value="grosser-service">
+              Ski Grosser Service - CHF 59.00
+            </option>
+            <option value="premium-service">
+              Ski Premium Service - CHF 79.00
+            </option>
+            <option value="kleiner-service-kids">
+              Kleiner Service Kids - CHF 29.00
+            </option>
+            <option value="grosser-service-kids">
+              Grosser Service Kids - CHF 39.00
+            </option>
+            <option value="snowboard-kleiner-service">
+              Snowboard Kleiner Service - CHF 49.00
+            </option>
+            <option value="snowboard-grosser-service">
+              Snowboard Grosser Service - CHF 69.00
+            </option>
+            <option value="snowboard-premium-service">
+              Snowboard Premium Service - CHF 89.00
+            </option>
+            <option value="langlauf-kleiner-service">
+              Langlauf Kleiner Service - CHF 39.00
+            </option>
+            <option value="langlauf-grosser-service">
+              Langlauf Grosser Service - CHF 59.00
+            </option>
+            <option value="bindung-montieren">
+              Bindung montieren und einstellen - CHF 25.00
+            </option>
+            <option value="fell-zuschneiden">
+              Fell zuschneiden - CHF 20.00
+            </option>
+            <option value="heisswachsen">Heisswachsen - CHF 30.00</option>
           </select>
 
           <button type="submit">Anmelden</button>
@@ -108,6 +108,6 @@
         <p>E-Mail: info@jetstream-service.de</p>
       </section>
     </main>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

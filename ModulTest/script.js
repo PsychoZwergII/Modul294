@@ -39,10 +39,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const completionDate = new Date(currentDate);
-    completionDate.setDate(currentDate.getDate() + 7 + additionalDays);
-
-    alert(`Das Abholdatum ist: ${completionDate.toLocaleDateString("de-DE")}`);
+    completionDate.setDate(currentDate.getDate() + additionalDays);
+    alert(
+      `Das voraussichtliche Fertigstellungsdatum ist ${completionDate.toLocaleDateString()}`
+    );
   }
 
-  window.validateForm = validateForm;
+  window.openSidebar = function () {
+    document.getElementById("mySidebar").style.width = "250px";
+  };
+
+  window.closeSidebar = function () {
+    document.getElementById("mySidebar").style.width = "0";
+  };
 });
